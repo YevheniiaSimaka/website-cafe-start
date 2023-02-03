@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=K2D:wght@200&family=Kalam&family=Outfit:wght@900&family=Poppins:wght@100&family=Roboto:wght@300&family=Rochester&family=Sacramento&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0A090E;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    .top {
+        height: 5rem;
+        width: 100%;
+        background-color: #070707;
+        color: white;
+        border: 2px solid #262424;
+        border-left: transparent 2px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+
+        .icon {
+            background-color: #1A1A1A;
+            width: 5rem;
+            height: 4.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            position: relative;
+            border: 2px solid #262424;
+            box-sizing: border-box;
+            cursor: pointer;
+            border-top: 0px;
+            border-left: transparent 2px;
+
+            i {
+                width: 5rem;
+                height: 5rem;
+                box-sizing: border-box;
+                font-size: 2.75rem;
+                margin: auto;
+                position: relative;
+                display: inline-block;
+                top: 1rem;
+                left: 1rem;
+                color: #555555;
+                font-weight: 900;
+                font-family: sarif;
+                border-top: 0px;
+                border-left: none !important;
+            }
+        }
+
+        .main {
+            display: flex;
+            padding: 0.5rem 3rem;
+            justify-content: space-between;
+            width: 100%;
+
+            .logo {
+                font-family: 'Roboto';
+                font-weight: 900;
+                height: 4rem;
+
+                h4 {
+                    margin: auto;
+                    display: inline-block;
+                    position: relative;
+                    margin: 0.5rem 0;
+                }
+
+                span {
+                    display: inline-block;
+                    font-weight: 100;
+                    text-transform: initial;
+                    font-size: 1.1rem;
+                    font-family: 'Sacramento';
+                    color: #A8B0E0;
+                }
+            }
+
+            .links {
+                display: flex;
+                width: fit-content;
+            }
+
+            a {
+                color: white;
+                height: fit-content;
+                margin: 0 1rem;
+                margin: auto 1rem;
+            }
+
+            i {
+                color: white;
+                height: fit-content;
+                font-size: 1.25rem;
+                margin: auto 0.75rem;
+                color: #A8B0E0;
+            }
+
+        }
+
+    }
+
+    .left {
+        height: 100vh;
+        width: 5rem;
+        background-color: #070707;
+        border: 2px solid #262424;
+        box-sizing: border-box;
+        border-top: none;
+        border-left: 0px;
+    }
+}
+
+.mainPage {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: calc(100% - 5rem);
+    min-height: calc(95vh - 5rem);
+    color: white;
+    background-image: url(img/bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        padding-right: 3rem;
+
+        .first {
+            flex: 4;
+            padding: 3rem;
+            min-height: 100%;
+            padding-top: 4rem;
+
+            h3 {
+                font-size: 2rem;
+                font-family: 'Roboto';
+                font-weight: 100;
+                letter-spacing: 0.2rem;
+            }
+
+            p {
+                font-family: 'Roboto';
+                font-weight: 100;
+                color: rgb(188, 188, 188);
+                font-size: 0.85rem;
+                letter-spacing: 0.075rem;
+                line-height: 1.25;
+                margin: 1rem 0;
+                line-height: 1.5;
+            }
+        }
+
+        .second {
+            flex: 7;
+
+            img {
+                width: 95%;
+                transform: translateX(-3rem);
+                position: relative;
+                margin-top: 15%;
+
+            }
+        }
+
+        .third {
+            flex: 5;
+            min-height: 100%;
+
+            .content {
+                margin-top: auto;
+                margin-top: 7rem;
+            }
+
+            h3 {
+                font-size: 3rem;
+                font-family: 'Roboto';
+                font-weight: 800;
+                letter-spacing: 0.2rem;
+                line-height: 1.25;
+
+                span {
+                    color: #A8B0E0;
+                    font-family: "Sacramento";
+                    font-size: 0.75rem;
+                    letter-spacing: normal;
+                }
+            }
+
+            p {
+                font-family: 'Roboto';
+                font-weight: 100;
+                color: rgb(188, 188, 188);
+                font-size: 0.85rem;
+                letter-spacing: 0.075rem;
+                line-height: 1.25;
+                margin: 1rem 0;
+                line-height: 1.5;
+            }
+        }
+    }
+
+}
